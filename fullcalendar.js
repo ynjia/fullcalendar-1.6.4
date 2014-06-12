@@ -3995,6 +3995,8 @@ function AgendaEventRenderer() {
 			"<div class='fc-event-title'>" +
 			htmlEscape(event.title || '') +
 			"</div>" +
+			"<div class='fc-event-cancel' ng-click='removeEvent()'>X 取消"+
+            "</div>" +
 			"</div>" +
 			"<div class='fc-event-bg'></div>";
 		if (seg.isEnd && isEventResizable(event)) {
